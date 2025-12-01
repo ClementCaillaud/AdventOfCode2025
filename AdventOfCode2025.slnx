@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="Common/Common.csproj" />
+  <Project Path="Day01_SecretEntrance/Day01_SecretEntrance.csproj" />
+</Solution>
