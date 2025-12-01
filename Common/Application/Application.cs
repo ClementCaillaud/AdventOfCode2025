@@ -11,6 +11,8 @@ public static class Application
     /// <param name="part"></param>
     public static void ProcessPart(IPart part, bool isExampleData = false)
     {
+        Console.WriteLine("=========================================");
+
         var partName = part.GetType().Name;
         Console.WriteLine(isExampleData ?
             $"Start {partName} - Example Data" :
@@ -27,5 +29,7 @@ public static class Application
             Console.WriteLine($"{partName} : No result");
         else
             Console.WriteLine($"{partName} : {result}");
+
+        Console.WriteLine("=========================================");
     }
 }

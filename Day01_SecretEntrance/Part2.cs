@@ -3,11 +3,11 @@ using Common.Services;
 
 namespace Day01_SecretEntrance;
 
-public class Part1 : IPart
+public class Part2 : IPart
 {
     private readonly string _inputPath;
 
-    public Part1(string inputPath)
+    public Part2(string inputPath)
     {
         _inputPath = inputPath;
     }
@@ -31,15 +31,27 @@ public class Part1 : IPart
                 {
                     int overflow = dialValue / 100;
                     dialValue -= overflow * 100;
+                    nbOfZeros += overflow;
+                    if (dialValue == 0)
+                        nbOfZeros--;
                 }
             }
             else if (directionLetter == 'L')
             {
+                bool wasZero = dialValue == 0;
                 dialValue -= distance;
                 if (dialValue < 0)
                 {
                     int overflow = dialValue / 100;
-                    dialValue += overflow * 100 + 100;
+                    dialValue += overflow * -100 + 100;
+                    if (dialValue == 100)
+                        dialValue = 0;
+                    if (!wasZero)
+                        nbOfZeros += 1 + overflow * -1;
+                    else
+                        nbOfZeros += overflow * -1;
+                    if (dialValue == 0)
+                        nbOfZeros--;
                 }
             }
             if (dialValue == 0)
