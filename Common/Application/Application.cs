@@ -1,4 +1,5 @@
-﻿using Common.Interfaces;
+﻿using Common.Constants;
+using Common.Interfaces;
 using System.Diagnostics;
 
 namespace Common.Application;
@@ -9,12 +10,12 @@ public static class Application
     /// Lauch process
     /// </summary>
     /// <param name="part"></param>
-    public static void ProcessPart(IPart part, bool isExampleData = false)
+    public static void ProcessPart(IPart part, InputType inputType)
     {
         Console.WriteLine("=========================================");
 
         var partName = part.GetType().Name;
-        Console.WriteLine(isExampleData ?
+        Console.WriteLine(inputType == InputType.EXAMPLE ?
             $"Start {partName} - Example Data" :
             $"Start {partName}"
         );

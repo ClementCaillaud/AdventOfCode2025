@@ -39,7 +39,9 @@ public class Part1 : IPart
                 if (dialValue < 0)
                 {
                     int overflow = dialValue / 100;
-                    dialValue += overflow * 100 + 100;
+                    dialValue += overflow * -100 + 100;
+                    if (dialValue == 100)
+                        dialValue = 0;
                 }
             }
             if (dialValue == 0)
