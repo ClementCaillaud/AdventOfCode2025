@@ -4,4 +4,5 @@
   </Folder>
   <Project Path="Common/Common.csproj" />
   <Project Path="Day01_SecretEntrance/Day01_SecretEntrance.csproj" />
+  <Project Path="Day02_GiftShop/Day02_GiftShop.csproj" Id="10b66a12-c28b-4a3c-8980-8755f89add93" />
 </Solution>
