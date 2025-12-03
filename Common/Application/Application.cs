@@ -24,7 +24,7 @@ public static class Application
         var result = part.Process();
         watch.Stop();
 
-        Console.WriteLine($"End {partName} in {watch.ElapsedMilliseconds} ms");
+        Console.WriteLine($"End {partName} in {watch.Elapsed.TotalMilliseconds} ms");
 
         if (string.IsNullOrEmpty(result))
             Console.WriteLine($"{partName} : No result");
