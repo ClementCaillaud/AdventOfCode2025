@@ -7,4 +7,5 @@
   <Project Path="Day02_GiftShop/Day02_GiftShop.csproj" Id="10b66a12-c28b-4a3c-8980-8755f89add93" />
   <Project Path="Day03_Lobby/Day03_Lobby.csproj" Id="d62a7eb3-b937-4755-a28e-c02705226b2f" />
   <Project Path="Day04_PrintingDepartment/Day04_PrintingDepartment.csproj" Id="2d8d8a65-a267-4271-868d-6a128facdbb7" />
+  <Project Path="Day05_Cafeteria/Day05_Cafeteria.csproj" Id="d86b2dd5-554e-49ff-845a-4457065111db" />
 </Solution>
