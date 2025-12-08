@@ -9,4 +9,5 @@
   <Project Path="Day04_PrintingDepartment/Day04_PrintingDepartment.csproj" Id="2d8d8a65-a267-4271-868d-6a128facdbb7" />
   <Project Path="Day05_Cafeteria/Day05_Cafeteria.csproj" Id="d86b2dd5-554e-49ff-845a-4457065111db" />
   <Project Path="Day06_TrashCompactor/Day06_TrashCompactor.csproj" Id="17fbcecc-5cf5-44ae-bdd3-0df8a2479241" />
+  <Project Path="Day07_Laboratories/Day07_Laboratories.csproj" Id="846e21d8-8964-466e-af7e-99faf4df6689" />
 </Solution>
